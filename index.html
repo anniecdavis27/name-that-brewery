@@ -3,6 +3,7 @@
   <head>
     <title>Name That Brewery!</title>
     <link rel="stylesheet" href="CSS/app.css" />
+
   </head>
 
   <body>
@@ -18,26 +19,26 @@
         identify 80% of the brews. Good Luck!
       </p>
     </div>
-    <div class="game-content">
-      <div class="beer-graphic">
+    <div id="game-content" class="game-content">
+      <div id="beer-graphic" class="beer-graphic">
+        Question
         <img src="images/beersample.png" width="150">
       </div>
-
-      <div class="answer-box">
+      <div id="answer-box" class="answer-box">
         <div class="ab-row-one">
-          <button class="trigger">Option One</button>
-          <button class="trigger">Option Two</button>
+          <button id="optionOne" class="trigger">Option One</button>
+          <button id="optionTwo" class="trigger">Option Two</button>
         </div>
         <div class="ab-row-two">
-          <button class="trigger">Option Three</button>
-          <button class="trigger">Option Four</button>
+          <button id="optionThree" class="trigger">Option Three</button>
+          <button id="optionFour" class="trigger">Option Four</button>
         </div>
-        <button class="trigger-two">Submit</button>
-        <br>
-        <button class="trigger-two">Next Question</button>
+
+        <button id="next-btn" class="trigger-two">Next Question</button>
         <div class="answer-check">Correct!</div>
       </div>
       <div class="score-box">Score: 0/50</div>
     </div>
+    <script src="JS/app.js"></script>
   </body>
 </html>
