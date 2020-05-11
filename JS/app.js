@@ -1,3 +1,10 @@
+// Things that still need to be accomplished
+// - get selectAnswer function working properly
+// - make correct/incorrect message appear when appropriate
+// - get nextQuestion button working
+// - add scoreUpdate functionality
+
+
 var gameContentElement = document.getElementById('game-content')
 var graphicElement = document.getElementById('beer-graphic')
 console.log(graphicElement)
@@ -88,7 +95,7 @@ var brews = [
   answers: [
     {text: 'The Alchemist', correct: false},
     {text: 'Grimm', correct: false},
-    {text: 'Russian River Brewing ', correct: true},
+    {text: 'Russian River', correct: true},
     {text: 'Tree House', correct: false},
   ],
   },
