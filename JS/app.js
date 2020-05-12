@@ -45,6 +45,7 @@ function showQuestion(brew) {
 function resetState() {
   // resets state every time a new question is called
   nextButton.classList.add('hide')
+  console.log(nextButton)
   while (answerButtons.firstChild) {
     answerButtons.removeChild(answerButtons.firstChild)
   }
@@ -56,11 +57,12 @@ function selectAnswer(e) {
   // this function will need to call update score if the the answer chosen is correct (conditional)
 
   let selectedChoice = e.target
-  let isCorrect = selectedChoice.dataset.correct
+  let correct = selectedChoice.dataset.correct
   setStatusClass(document.body, correct)
   Array.from(answerButtons.children).forEach(button => {
     setStatusClass(button, button.dataset.correct)
   })
+  nextButton.classList.remove('hide')
 }
 
 function setStatusClass(element, correct) {
@@ -71,6 +73,11 @@ function setStatusClass(element, correct) {
       element.classList.add('wrong')
     }
   }
+
+function clearStatusClass(element) {
+  element.classList.remove('correct')
+  element.classList.remove('wrong')
+}
 
 function updateScore() {
   // this function is a conditional that updates the score board if the users choice is correct, called when the answer is selected
