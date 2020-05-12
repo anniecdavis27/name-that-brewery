@@ -1,6 +1,6 @@
 //beer list variables
 
-let brews = [
+const brews = [
   {
   id: 1,
   beer: 'Heady Topper',
@@ -134,7 +134,7 @@ let brews = [
   choices: ['a', 'b', 'c', 'd'],
   answer: '',
   },
-
+// completed can graphics end here
   {
   id: 16,
   beer: 'Awoogah IPA',

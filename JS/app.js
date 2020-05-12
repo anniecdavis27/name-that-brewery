@@ -81,7 +81,7 @@ function updateScore() {
 
 var brews = [
   {
-  question: '<img src="images/HeadyTopper.png" width="150">',
+  question: '<img src="images/HeadyTopper.png">',
   answers: [
     {text: 'The Alchemist', correct: true},
     {text: 'Grimm', correct: false},
@@ -91,11 +91,141 @@ var brews = [
   },
 
   {
-  question: '<img src="images/Pliny.png" width="150">',
+  question: '<img src="images/Pliny.png">',
   answers: [
     {text: 'The Alchemist', correct: false},
     {text: 'Grimm', correct: false},
     {text: 'Russian River', correct: true},
+    {text: 'Tree House', correct: false},
+  ],
+  },
+
+  {
+  question: '<img src="images/Julius.png">',
+  answers: [
+    {text: 'The Alchemist', correct: false},
+    {text: 'Grimm', correct: false},
+    {text: 'Russian River', correct: false},
+    {text: 'Tree House', correct: true},
+  ],
+  },
+
+  {
+  question: '<img src="images/Dinner.png">',
+  answers: [
+    {text: 'The Alchemist', correct: false},
+    {text: 'Grimm', correct: false},
+    {text: 'Maine Beer Co.', correct: true},
+    {text: 'Tree House', correct: false},
+  ],
+  },
+
+  {
+  question: '<img src="images/SipofSunshine.png">',
+  answers: [
+    {text: 'Lawson\'s', correct: true},
+    {text: 'Grimm', correct: false},
+    {text: 'Wicked Weed', correct: false},
+    {text: 'Tree House', correct: false},
+  ],
+  },
+
+  {
+  question: '<img src="images/SocietyAndSolitude.png">',
+  answers: [
+    {text: 'The Alchemist', correct: false},
+    {text: 'Grimm', correct: false},
+    {text: 'Maine Beer Co.', correct: false},
+    {text: 'Hill Farmstead', correct: true},
+  ],
+  },
+
+  {
+  question: '<img src="images/ScaledWayUp.png">',
+  answers: [
+    {text: 'The Alchemist', correct: false},
+    {text: 'Trillium', correct: true},
+    {text: 'Russian River', correct: false},
+    {text: 'Tree House', correct: false},
+  ],
+  },
+
+  {
+  question: '<img src="images/LieutenantDank.png">',
+  answers: [
+    {text: 'Wicked Weed', correct: true},
+    {text: 'Hill Farmstead', correct: false},
+    {text: 'Goose Island', correct: false},
+    {text: 'Tree House', correct: false},
+  ],
+  },
+
+  {
+  question: '<img src="images/FundamentalForces.png">',
+  answers: [
+    {text: 'The Alchemist', correct: false},
+    {text: 'Grimm', correct: false},
+    {text: 'Bottle Logic', correct: true},
+    {text: 'Tree House', correct: false},
+  ],
+  },
+
+  {
+  question: '<img src="images/BourbonCounty.png">',
+  answers: [
+    {text: 'Goose Island', correct: true},
+    {text: 'Grimm', correct: false},
+    {text: 'Russian River', correct: false},
+    {text: 'Tree House', correct: false},
+  ],
+  },
+
+  {
+  question: '<img src="images/PearlyWit.png">',
+  answers: [
+    {text: 'The Alchemist', correct: false},
+    {text: 'Grimm', correct: false},
+    {text: 'Springdale Beer', correct: true},
+    {text: 'Tree House', correct: false},
+  ],
+  },
+
+  {
+  question: '<img src="images/wavelength.png">',
+  answers: [
+    {text: 'The Alchemist', correct: false},
+    {text: 'Equilibrium', correct: true},
+    {text: 'Russian River', correct: false},
+    {text: 'Tree House', correct: false},
+  ],
+  },
+
+  {
+  question: '<img src="images/MajorTom.png">',
+  answers: [
+    {text: 'The Alchemist', correct: false},
+    {text: 'Grimm', correct: false},
+    {text: 'Russian River', correct: false},
+    {text: 'Lamplighter', correct: true},
+  ],
+  },
+
+  {
+  question: '<img src="images/SetWest.png">',
+  answers: [
+    {text: 'The Alchemist', correct: false},
+    {text: 'Coronado Brewing', correct: true},
+    {text: 'Russian River', correct: false},
+    {text: 'Tree House', correct: false},
+  ],
+  },
+
+  {
+  question: '<img src="images/RollingInClouds.png">',
+  answers: [
+    {text: 'Finback', correct: true},
+    {text: 'Grimm', correct: false},
+    {text: 'Russian River', correct: false},
     {text: 'Tree House', correct: false},
   ],
   },
