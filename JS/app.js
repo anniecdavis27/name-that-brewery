@@ -10,6 +10,7 @@ var graphicElement = document.getElementById('beer-graphic')
 // console.log(graphicElement)
 var answerButtons = document.getElementById('answer-box')
 var nextButton = document.getElementById('next-btn')
+var answerChecker = document.getElementById('answer-check')
 
 var shuffledQuestions, currentQuestionIndex
 
@@ -37,8 +38,8 @@ function showQuestion(brew) {
     let button = document.createElement('button')
     button.innerText = answer.text
     button.classList.add('trigger')
-    if (answer.correct) {
-      button.dataset.correct = answer.correct
+    if (answer.isCorrect) {
+      button.dataset.isCorrect = answer.isCorrect
     }
     button.addEventListener('click', selectAnswer)
     answerButtons.appendChild(button)
@@ -47,7 +48,9 @@ function showQuestion(brew) {
 
 function resetState() {
   // resets state every time a new question is called
+  // clearStatusClass(document.body)
   nextButton.classList.add('hide')
+  answerChecker.innerText = ''
   while (answerButtons.firstChild) {
     answerButtons.removeChild(answerButtons.firstChild)
   }
@@ -60,6 +63,7 @@ function selectAnswer(e) {
 
   let selectedChoice = e.target
   let isCorrect = selectedChoice.dataset.isCorrect
+  // console.log(isCorrect)
   setStatusClass(document.body, isCorrect)
   Array.from(answerButtons.children).forEach(button => {
     setStatusClass(button, button.dataset.isCorrect)
@@ -69,10 +73,16 @@ function selectAnswer(e) {
 
 function setStatusClass(element, isCorrect) {
   clearStatusClass(element)
+  console.log(isCorrect)
     if (isCorrect) {
+      console.log(isCorrect)
       element.classList.add('correct')
+      answerChecker.innerText = 'Correct!'
+      answerChecker.style.color = 'green'
     } else {
       element.classList.add('wrong')
+      answerChecker.innerText = 'Try Again!'
+      answerChecker.style.color = 'red'
     }
   }
 
